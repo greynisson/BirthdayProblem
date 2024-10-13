@@ -22,6 +22,13 @@ class Program
 
     private static List<Person> GetPersons(string filePath)
     {
+        bool isFilePathMissing = string.IsNullOrEmpty(filePath);
+
+        if (isFilePathMissing)
+        {
+            return new List<Person>();
+        }
+
         string dataSourceType = filePath.Split('.').LastOrDefault() ?? "";
 
         if (dataSourceType.Equals("json", StringComparison.OrdinalIgnoreCase))
