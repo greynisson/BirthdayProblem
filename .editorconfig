@@ -1,0 +1,36 @@
+# .editorconfig
+
+# Indentation and spacing
+[*.{cs,vb,html,css,js,json}]
+indent_style = space
+indent_size = 4
+end_of_line = CRLF
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# C# specific rules
+[*.cs]
+csharp_new_line_before_open_brace = all
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+csharp_indent_block_contents = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+
+# ASP.NET specific rules
+[*.cshtml]
+indent_size = 2
+
+# HTML and CSS settings
+[*.html]
+indent_size = 2
+
+[*.css]
+indent_size = 2
+
+# JavaScript and JSON settings
+[*.{js,json}]
+indent_size = 2
