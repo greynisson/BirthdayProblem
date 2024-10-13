@@ -4,10 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
+        string filePath = args[0];
+
         var today = DateTime.Today;
         var birthdayService = new BirthdayService(today);
 
-        List<Person> persons = PersonCsvAdapter.GetPersonsFromCsv(args[0]);
+        var persons = GetPersons(filePath);
 
         foreach (Person p in persons)
         {
@@ -16,5 +18,17 @@ class Program
                 Console.WriteLine($"Happy Birthday, {p.Name}!");
             }
         }
+    }
+
+    private static List<Person> GetPersons(string filePath)
+    {
+        string dataSourceType = filePath.Split('.').LastOrDefault() ?? "";
+
+        if (dataSourceType.Equals("json", StringComparison.OrdinalIgnoreCase))
+        {
+            return PersonJsonAdapter.GetPersonsFromJson(filePath);
+        }
+
+        return PersonCsvAdapter.GetPersonsFromCsv(filePath);
     }
 }

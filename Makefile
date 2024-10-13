@@ -17,3 +17,6 @@ test-unit:
 
 run:
 	dotnet run BirthdayProblem.Service/person.csv --project BirthdayProblem.Service/BirthdayProblem.Service.csproj
+
+run-json:
+	dotnet run BirthdayProblem.Service/person.json --project BirthdayProblem.Service/BirthdayProblem.Service.csproj

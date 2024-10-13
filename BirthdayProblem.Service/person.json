@@ -1,18 +1,22 @@
 [
   {
-    "fullName": "Kurt Cobain",
-    "dateOfBirth": "1967-02-20T00:00:00Z"
+    "Name": "Kurt Cobain",
+    "DateOfBirth": "1967-02-20T00:00:00Z"
   },
   {
-    "fullName": "Rihanna",
-    "dateOfBirth": "1988-02-20T00:00:00Z"
+    "Name": "Rihanna",
+    "DateOfBirth": "1988-02-20T00:00:00Z"
   },
   {
-    "fullName": "Adam Baldwin",
-    "dateOfBirth": "1962-02-27T00:00:00Z"
+    "Name": "Adam Baldwin",
+    "DateOfBirth": "1962-02-27T00:00:00Z"
   },
   {
-    "fullName": "Plato",
-    "dateOfBirth": "0428-02-27T00:00:00Z"
+    "Name": "Plato",
+    "DateOfBirth": "0428-02-27T00:00:00Z"
+  },
+  {
+    "Name": "God",
+    "DateOfBirth": "0001-10-13T00:00:00Z"
   }
 ]
